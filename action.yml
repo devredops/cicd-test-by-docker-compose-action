@@ -13,7 +13,7 @@ runs:
         submodules: true
     -
       name: Create Cache Registry
-      uses: actions/cache@v4
+      uses: actions/cache@v5
       with:
         path: ${{ env.IMAGE_CACHE_DIR }}
         key: ${{ runner.os }}-docker-images-v${{ env.IMAGE_KEY_VERSION }}-${{ github.sha }}
